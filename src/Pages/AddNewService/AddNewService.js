@@ -2,10 +2,22 @@ import React from 'react';
 import { Col, Container, Form, Row, Button } from 'react-bootstrap';
 import BreadcrumbBanner from '../Shared/BreadcrumbBanner/BreadcrumbBanner';
 import { useForm } from "react-hook-form";
+import axios from 'axios';
+
 
 const AddNewService = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit, reset , formState: { errors } } = useForm();
+    const onSubmit = data => {
+        axios.post('https://frozen-beyond-51004.herokuapp.com/services', data)
+        .then(res => {
+            if(res.data.insertedId){
+                alert('Added Successfully');
+                reset();
+            }
+            console.log(res);
+        })
+
+    }
 
     return (
         <div>
