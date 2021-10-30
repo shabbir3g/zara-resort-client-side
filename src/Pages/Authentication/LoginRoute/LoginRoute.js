@@ -9,10 +9,11 @@ import Login from '../Login/Login';
 const LoginRoute = ({ children, ...rest }) => {
     const {user, isLoading } = useAuth();
     if(isLoading){
-        return   <div  className="text-center">
+        return   <div>
         <Login></Login>
+        <div className="text-center"> 
         <Spinner animation="border" variant="danger" />
-        
+        </div>
         </div>
         
     }

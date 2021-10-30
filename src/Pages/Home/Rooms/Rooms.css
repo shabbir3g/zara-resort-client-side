@@ -23,8 +23,9 @@
   position: absolute;
   z-index: 9;
 }
-img {
+.thumb-top img {
   width: 100%;
+  transition-duration: 0.5s;
 }
 .overlay-white,
 .room-thumb-grid-1 .facility-icon li,
@@ -47,16 +48,17 @@ img {
   padding: 0 25px;
   border: 2px solid transparent;
 }
+
 .btn-primary {
-  color: #f4d424 !important;
-  border-color: #f4b624 !important;
-  background-color: transparent !important;
-  text-transform: uppercase;
-}
-.btn-primary:hover {
   color: #fff !important;
   background-color: #f4b624 !important;
   border-color: #f4ad24 !important;
+  text-transform: uppercase;
+}
+.btn-primary:hover {
+  color: #f4d424 !important;
+  border-color: #f4b624 !important;
+  background-color: transparent !important;
 }
 .float-right {
   float: right !important;
@@ -66,4 +68,16 @@ img {
 }
 [class*="room-thumb-"] .room-info {
   display: inline-block;
+}
+.hover_zoom:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.text-secondery {
+  color: #094ba0 !important;
+  font-weight: bold;
+  font-size: 25px;
 }

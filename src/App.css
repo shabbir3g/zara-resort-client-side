@@ -160,6 +160,13 @@ a:hover {
   color: #fff;
 }
 
+/* Add service style  */
+
+.add-service {
+  width: 60%;
+  margin: 80px auto;
+}
+
 /* Login Register style  */
 .login-form {
   width: 25%;
