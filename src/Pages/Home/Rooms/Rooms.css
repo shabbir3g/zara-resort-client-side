@@ -1,0 +1,69 @@
+.shadow {
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.05) !important;
+}
+.thumb-top {
+  position: relative;
+}
+.overflow_hidden {
+  overflow: hidden;
+}
+.room-thumb-grid-1 .upper-place-bottom-left {
+  bottom: 15px;
+  left: 20px;
+}
+[class*="room-thumb-grid-"] .upper-place-bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+[class*="room-thumb-"] .room-size {
+  padding: 9px 15px;
+  font-weight: 500;
+}
+[class*="upper-place-"] {
+  position: absolute;
+  z-index: 9;
+}
+img {
+  width: 100%;
+}
+.overlay-white,
+.room-thumb-grid-1 .facility-icon li,
+[class*="room-thumb-grid-"] .upper-place-bottom-right {
+  background: rgba(255, 255, 255, 0.5);
+}
+.down-line-left {
+  padding-bottom: 15px;
+}
+.room-thumb-grid-1 .per-night {
+  margin-bottom: 0;
+  float: left;
+  margin-top: 10px;
+}
+.btn {
+  font-weight: 500;
+  line-height: 42px;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 0 25px;
+  border: 2px solid transparent;
+}
+.btn-primary {
+  color: #f4d424 !important;
+  border-color: #f4b624 !important;
+  background-color: transparent !important;
+  text-transform: uppercase;
+}
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #f4b624 !important;
+  border-color: #f4ad24 !important;
+}
+.float-right {
+  float: right !important;
+}
+[class*="room-thumb-grid-"] .room-info {
+  width: 100%;
+}
+[class*="room-thumb-"] .room-info {
+  display: inline-block;
+}

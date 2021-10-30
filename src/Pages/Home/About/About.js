@@ -8,8 +8,8 @@ const About = () => {
             <Container> 
                 <Row className="my-5"> 
                     <Col className="my-5" xs={12} lg={6}> 
+                        <h1>Zara Resort</h1>
                         <h3>Who we are</h3>
-                        <h1>Zara Luxury Hotel & Resort</h1>
                         <b><i>Manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.</i></b> 
                         <br />
                         <br />

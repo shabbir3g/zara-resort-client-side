@@ -110,6 +110,56 @@ a:hover {
   position: relative;
   top: -200px;
 }
+/* subscribe style  */
+
+.subscribe {
+  background-image: url("./images/bg1.jpg");
+}
+.subscribe .overlay {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  overflow: hidden !important;
+  max-width: 100%;
+}
+.main_title.mt_white h2 {
+  color: #fff;
+  text-align: center;
+}
+.main_description.md_white {
+  color: #fff;
+  text-align: center;
+}
+.subscribe .form-group {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.subscribe .form-control {
+  display: block;
+  float: left;
+  padding: 28px;
+  border-radius: 50px;
+  background-color: #fff;
+  border-color: #86b7fe;
+}
+.subscribe button {
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.subscribe .button.btn_yellow {
+  background: #ffb600;
+  border: 1px solid #ffb600;
+  color: #fff;
+}
+
 /* Login Register style  */
 .login-form {
   width: 25%;
