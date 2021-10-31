@@ -17,7 +17,7 @@ const About = () => {
                         <p>With its richly historic past, the Hotel Zara now fully becomes a part of the exciting and rapidly changing present with the addition of a modern, elegant luxury ocean front hotel. The beauty of Cox’s Bazar – the climate, the panoramic ocean views, the sandy beaches, plus the rich culture and history along with the warmth of the sun – is what attracts people here. And the Zara Beach Resort provides you exactly just that with extraordinary comfort, luxury and services</p>
                         <Link to="/contact"><Button className="zara-btn" variant="primary" size="md" >Contact Us</Button></Link>
                     </Col>
-                    <Col className="my-5" xs={12} lg={6}> 
+                    <Col className="my-5 about-image" xs={12} lg={6}> 
                         <img className="img-fluid" src={aboutimg} alt="" />
                     </Col>
                 </Row>

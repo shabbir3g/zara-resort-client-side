@@ -3,8 +3,8 @@
 body,
 p {
   font-family: "Rubik", sans-serif;
-  font-size: 17px;
-  line-height: 29px;
+  font-size: 15px;
+  line-height: 26px;
 }
 a,
 a:hover {
@@ -23,6 +23,9 @@ h6 {
 .btn-link.btn:hover {
   background-color: transparent !important;
 }
+
+/* About Style  */
+
 h1.title-main {
   color: #f0f0f0;
   font-size: 60px;
@@ -91,7 +94,8 @@ h1.title-main {
 
 .st-top-header {
   overflow: hidden;
-  border-bottom: 1px solid rgba(12, 184, 182, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 0;
 }
 .header-area {
   position: absolute;
