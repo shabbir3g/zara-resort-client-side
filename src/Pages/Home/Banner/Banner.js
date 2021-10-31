@@ -17,8 +17,8 @@ const Banner = () => {
                             <Carousel.Caption className="text-start">
                             <Row className="align-items-center home-slide"> 
                                 <Col xs={12} lg="6">
-                                <h1>Your Health is Our Top Priority</h1>
-                                <p>This is our slogan. Your Health is our top priority. If you sick then come here fast to treatment your health. </p>
+                                <h1>Zara Resort</h1>
+                                <p>An ode to luxury of unforgettable memories. Zara Resort revives its famed legacy of comfort, elegance and impeccable service.</p>
                                 <Link to="/contact"><Button className="zara-btn" variant="primary" size="lg" >Appointment</Button></Link>
                                 </Col>
                                 <Col xs={12} lg="6">
@@ -32,8 +32,8 @@ const Banner = () => {
                         <Carousel.Caption className="text-start">
                             <Row className="align-items-center home-slide"> 
                                 <Col xs={12} lg="6">
-                                <h1>Fovia is the No. 1 Hospital</h1>
-                                <p>If you affected to Fovia in this area, So don't worry about it. We are here in your city to come fast.  </p>
+                                <h1>Zara Resort</h1>
+                                <p>An ode to luxury of unforgettable memories. Zara Resort revives its famed legacy of comfort, elegance and impeccable service.</p>
                                 <Link to="/contact"><Button className="zara-btn" variant="primary" size="lg" >Appointment</Button></Link>
                                 </Col>
                                 <Col xs={12} lg="6">
@@ -47,8 +47,8 @@ const Banner = () => {
                         <Carousel.Caption className="text-start">
                             <Row className="align-items-center home-slide"> 
                                 <Col xs={12} lg="6">
-                                <h1>Exceptional Care for Women</h1>
-                                <p>If any women going to suffer any critical disses so, We can come here to care any women disses in your near city</p>
+                                <h1>Zara Resort</h1>
+                                <p>An ode to luxury of unforgettable memories. Zara Resort revives its famed legacy of comfort, elegance and impeccable service.</p>
                                 <Link to="/contact"><Button className="zara-btn" variant="primary" size="lg" >Appointment</Button></Link>
                                 </Col>
                                 <Col xs={12} lg="6">
@@ -62,8 +62,8 @@ const Banner = () => {
                         <Carousel.Caption className="text-start">
                             <Row className="align-items-center home-slide"> 
                                 <Col xs={12} lg="6">
-                                <h1>Exceptional Care for Women</h1>
-                                <p>If any women going to suffer any critical disses so, We can come here to care any women disses in your near city</p>
+                                <h1>Zara Resort</h1>
+                                <p>An ode to luxury of unforgettable memories. Zara Resort revives its famed legacy of comfort, elegance and impeccable service.</p>
                                 <Link to="/contact"><Button className="zara-btn" variant="primary" size="lg" >Appointment</Button></Link>
                                 </Col>
                                 <Col xs={12} lg="6">
