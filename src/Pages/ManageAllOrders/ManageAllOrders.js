@@ -10,7 +10,7 @@ const ManageAllOrders = () => {
     const [orders, setOrders] = useState();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/ManageAllOrders`)
+        fetch(`https://frozen-beyond-51004.herokuapp.com/ManageAllOrders`)
         .then((res) => res.json())
         .then((data) => setOrders(data) )
 
@@ -19,7 +19,7 @@ const ManageAllOrders = () => {
    
 
     const handleUpdate = (id) => {
-        const url = `http://localhost:5000/udpate/${id}`;
+        const url = `https://frozen-beyond-51004.herokuapp.com/udpate/${id}`;
         fetch(url, {
             method: 'PUT'
         })
@@ -36,7 +36,7 @@ const ManageAllOrders = () => {
     const handleDeleteUser = id =>{
         const proceed = window.confirm('Are you sure, You want to delete');
         if(proceed){
-            const url = `http://localhost:5000/booking/${id}`;
+            const url = `https://frozen-beyond-51004.herokuapp.com/booking/${id}`;
             fetch(url, {
                 method: 'DELETE'
             

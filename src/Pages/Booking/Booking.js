@@ -24,7 +24,7 @@ const Booking = () => {
         data.status = "Pending";
         console.log(data);
 
-       axios.post('http://localhost:5000/booking', data)
+       axios.post('https://frozen-beyond-51004.herokuapp.com/booking', data)
         .then(res => {
             if(res.data.insertedId){
                 alert('Added Successfully');
@@ -37,7 +37,7 @@ const Booking = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/services/${roomId}`
+        const url = `https://frozen-beyond-51004.herokuapp.com/services/${roomId}`
             fetch(url)
             .then(res => res.json())
             .then(data => setService(data))

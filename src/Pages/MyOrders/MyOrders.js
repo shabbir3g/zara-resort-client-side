@@ -13,7 +13,7 @@ const MyOrders = () => {
     const [orders, setOrders] = useState();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/my-orders/${email}`)
+        fetch(`https://frozen-beyond-51004.herokuapp.com/my-orders/${email}`)
         .then((res) => res.json())
         .then((data) => setOrders(data) )
 
@@ -22,7 +22,7 @@ const MyOrders = () => {
         const handleDeleteUser = id =>{
             const proceed = window.confirm('Are you sure, You want to delete');
             if(proceed){
-                const url = `http://localhost:5000/booking/${id}`;
+                const url = `https://frozen-beyond-51004.herokuapp.com/booking/${id}`;
                 fetch(url, {
                     method: 'DELETE'
                 
