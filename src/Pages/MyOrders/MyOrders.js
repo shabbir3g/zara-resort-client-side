@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap';
+import { Spinner, Table } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 import BreadcrumbBanner from '../Shared/BreadcrumbBanner/BreadcrumbBanner';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -8,9 +8,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Trash = <FontAwesomeIcon icon={faTrash} />;
 
 const MyOrders = () => {
-    const {user} = useAuth();
+   
+    const {user, isLoading} = useAuth();
     const email = user?.email;
     const [orders, setOrders] = useState();
+
+    
 
     useEffect(() => {
         fetch(`https://frozen-beyond-51004.herokuapp.com/my-orders/${email}`)
@@ -18,6 +21,14 @@ const MyOrders = () => {
         .then((data) => setOrders(data) )
 
     }, []);
+
+    if(isLoading){
+            return  <div>
+                    <div className="text-center"> 
+                    <Spinner animation="border" variant="danger" />
+                    </div>
+                </div>
+        }
 
         const handleDeleteUser = id =>{
             const proceed = window.confirm('Are you sure, You want to delete');

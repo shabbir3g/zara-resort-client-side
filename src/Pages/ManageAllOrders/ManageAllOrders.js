@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap';
+import { Spinner, Table } from 'react-bootstrap';
 import BreadcrumbBanner from '../Shared/BreadcrumbBanner/BreadcrumbBanner';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import useAuth from '../../hooks/useAuth';
 
 const Trash = <FontAwesomeIcon icon={faTrash} />;
 
 const ManageAllOrders = () => {
+    const {isLoading} = useAuth();
     const [orders, setOrders] = useState();
 
     useEffect(() => {
@@ -16,7 +18,13 @@ const ManageAllOrders = () => {
 
     }, [orders]);
 
-   
+    if(isLoading){
+        return  <div>
+                <div className="text-center"> 
+                <Spinner animation="border" variant="danger" />
+                </div>
+            </div>
+    }
 
     const handleUpdate = (id) => {
         const url = `https://frozen-beyond-51004.herokuapp.com/udpate/${id}`;
