@@ -1,8 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik&display=swap");
 /* Common style  */
+body,
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 17px;
+  line-height: 29px;
+}
 a,
 a:hover {
   text-decoration: none !important;
   color: #383a4e;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+.btn-link.btn:hover {
+  background-color: transparent !important;
+}
+h1.title-main {
+  color: #f0f0f0;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.about-text > h3 {
+  color: #252c41;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-style: italic;
 }
 /* header style  */
 .header-logo {
@@ -377,4 +411,72 @@ footer .knsl-footer .knsl-footer-about {
   display: block;
   width: 80%;
   color: #8588a2;
+}
+
+/* Responsive style  */
+
+@media only screen and (max-width: 688px) {
+  .login-form {
+    width: 75%;
+  }
+  .st-top-header .st-top-header-in {
+    height: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .header-logo,
+  .footer-logo {
+    width: 200px;
+  }
+  .slider-image {
+    width: 50%;
+    margin: auto;
+  }
+  .home-slide.row {
+    display: none;
+  }
+  footer .knsl-copyright .container {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 441px) {
+  .st-top-header-btn {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .footer p {
+    font-size: 10px;
+  }
+  .footer .card-title.h5 {
+    text-align: center;
+  }
+  ul.footer-services {
+    text-align: center;
+  }
+  .footer p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .header-area {
+    position: inherit;
+    background-color: #00000053;
+  }
+}
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .slider-image {
+    width: 70%;
+    margin: auto;
+  }
+  .login-form {
+    width: 50%;
+  }
+  .st-top-header .st-top-header-in {
+    height: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
 }

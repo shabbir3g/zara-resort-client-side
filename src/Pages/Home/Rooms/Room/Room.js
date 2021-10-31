@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 const Room = (props) => {
-    const {title, desc, price, size, image} = props.room;
+    const {_id, title, desc, price, size, image} = props.room;
     return (
         <>
             <div className="col-md-6 col-lg-4">
@@ -15,7 +16,9 @@ const Room = (props) => {
                         <h5 className="title"><a className="text-secondery" href="/">{title}</a></h5>
                         <span>{desc.substring(0, 39)}</span> </div>
                     <div className="h5 per-night text-secondery">${price}<small>/Night</small></div>
-                    <Button className="btn btn-primary float-right fw-bold">Book Now</Button>
+                    <Link to={`booking/${_id}`}> 
+                        <Button className="btn btn-primary float-right fw-bold">Book Now</Button>
+                    </Link>
                 </div>
             </div>
             </div>

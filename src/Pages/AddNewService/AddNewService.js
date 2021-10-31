@@ -53,8 +53,8 @@ const AddNewService = () => {
                             </Form.Group>
                         </Row>
                         {errors.exampleRequired && <span>This field is required</span>}
-                        <Button variant="primary" type="submit">
-                            Submit
+                        <Button className="fw-bold" variant="primary" type="submit">
+                            Add Service
                         </Button>
                     </Form>
                 </Container>
