@@ -16,8 +16,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-6 col-lg-4">
                         <img className="knsl-footer-logo" src={logo} alt="Kinsley" />
-                        <div className="knsl-footer-about">Sequi dolores ratione eos eveniet provident soluta. Omnis nesciunt sit eos at, eius voluptatum rem corporis. Doloremque labore assumenda
-                            explicabo velit illo, soluta rem, inventore hic.</div>
+                        <div className="knsl-footer-about">Zara Beach Resort is Cox’s Bazar’s best oceanfront living modern and tropical accents. Comfortable bed with luxury linens, elegantly-detailed bathroom furnishings, settle in unwind indulge yourself with the luxury and scenic view from your room.</div>
                         <div className="knsl-footer-social">
                             <a href="/"><i className="fab fa-twitter"></i></a>
                             <a href="/"><i className="fab fa-facebook-f"></i></a>
