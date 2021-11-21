@@ -7,7 +7,7 @@ const PaperPlane = <FontAwesomeIcon icon={faPaperPlane} />;
 
 const Subscribe = () => {
     return (
-        <div className="subscribe">
+        <div className="subscribe mt-5">
             <div className="overlay">
             <div className="container">
                 <div className="main_title mt_wave mt_white a_center">

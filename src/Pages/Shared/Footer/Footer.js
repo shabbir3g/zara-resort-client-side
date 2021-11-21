@@ -37,7 +37,7 @@ const Footer = () => {
                             <li><Link to="/">Contact info</Link></li>
                         </ul>
                         </div>
-                        <div className="col-md-6 col-lg-3">
+                        <div className="col-md-6 col-lg-2">
                         <h4>Meet Kinsley</h4>
                         <ul className="knsl-footer-menu">
                             <li><Link to="/">Terms and conditions</Link></li>
@@ -49,7 +49,7 @@ const Footer = () => {
                         </div>
 
 
-                        <div className="col-md-6 col-lg-3">
+                        <div className="col-md-6 col-lg-4">
                         <h4>Instagram</h4>
                         <div className="footer-insta">
                             <Link to="/"><img src={inst1} alt="insta"/></Link>
